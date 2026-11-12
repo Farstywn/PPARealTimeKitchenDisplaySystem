@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F5F7FA] text-slate-800 antialiased selection:bg-[#00AEEF]/20 selection:text-slate-900;
+  }
+}
+
+/* Styling badge timer terisolasi via atribut data-urgency (tanpa border) */
+.kds-timer-badge[data-urgency="normal"] {
+  @apply bg-[#00AEEF]/10 text-[#007EA8];
+}
+.kds-timer-badge[data-urgency="normal"] .kds-timer-dot {
+  @apply bg-[#00AEEF];
+}
+
+.kds-timer-badge[data-urgency="warning"] {
+  @apply bg-amber-500/15 text-amber-700;
+}
+.kds-timer-badge[data-urgency="warning"] .kds-timer-dot {
+  @apply bg-amber-500;
+}
+
+.kds-timer-badge[data-urgency="critical"] {
+  @apply bg-[#EC008C]/15 text-[#C60075];
+}
+.kds-timer-badge[data-urgency="critical"] .kds-timer-dot {
+  @apply bg-[#EC008C] animate-pulse;
+}
+
+.kds-timer-badge[data-urgency="completed"] {
+  @apply bg-slate-100 text-slate-500;
+}
+.kds-timer-badge[data-urgency="completed"] .kds-timer-dot {
+  @apply bg-emerald-500;
+}
+
+/* Scrollbar minimalis */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.45);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
