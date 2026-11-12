@@ -1,5 +1,7 @@
 # Real-Time Kitchen Display System (KDS) — Mie Gacoan (PT Pesta Pora Abadi)
 
+> **Live Demo / Preview:** [**https://ppakds.farstywan.my.id/**](https://ppakds.farstywan.my.id/)
+
 Purwarupa **Real-Time Kitchen Display System (KDS)** berbasis **Next.js (App Router)** dan **TypeScript** untuk memantau serta mengelola antrean dapur berkecepatan tinggi (*Incoming*, *Cooking*, dan *Ready*).
 
 Proyek ini dirancang khusus untuk menjawab tantangan teknis di lapangan pada operasional outlet F&B dengan *order rate* tinggi:
